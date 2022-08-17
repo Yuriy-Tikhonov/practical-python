@@ -4,7 +4,7 @@ import os
 
 print(os.getcwd())
 
-f=open('Data/portfolio.csv', 'rt')
+f=open('Work/Data/portfolio.csv', 'rt')
 data = f.read()
 
 
