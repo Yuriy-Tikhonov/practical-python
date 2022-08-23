@@ -42,3 +42,31 @@ finally:
 # finally:
 #     print('finally')
 
+def foo(x):
+    bar(x)
+
+def bar(x):
+    print('bar', str(x))
+
+foo(333)
+
+
+# # OR
+# def bar(x):
+#     statements
+
+# def foo(x):
+#     bar(x)
+
+def test_func(a: str,b: str) -> str:
+    '''
+    test description
+    a - 1 param
+    b - 2 param
+    '''
+    print(a, ' - ', b)
+    return a
+
+test_func('1','2')
+
+# https://dabeaz-course.github.io/practical-python/Notes/03_Program_organization/01_Script.html
