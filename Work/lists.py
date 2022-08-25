@@ -80,3 +80,12 @@ arr2d = [1,2,3,[4,5,6]]
 print(arr2d)
 
 print('6 =', arr2d[3][2])
+
+
+nums = [0, 10, 20, 30, 40, 50]
+for i, num in enumerate(nums):
+    print(i, num)
+
+k = nums[5:5]
+
+print('empty = ', k)
