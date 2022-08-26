@@ -89,3 +89,7 @@ for i, num in enumerate(nums):
 k = nums[5:5]
 
 print('empty = ', k)
+
+k = nums.pop()
+print('last = ', k)
+print(nums)
