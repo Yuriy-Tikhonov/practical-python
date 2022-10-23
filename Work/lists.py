@@ -93,3 +93,17 @@ print('empty = ', k)
 k = nums.pop()
 print('last = ', k)
 print(nums)
+
+# https://docs.python.org/3/faq/programming.html#how-do-i-create-a-multidimensional-list
+# hist = [[0]*L1]*L2 - Это работает неправильно, так как внутренний массив будет нормальный, 
+# а внешний будет модержать одинаковые ссылки на него. 
+# Т.е при модификации элемента в любой строке элементы будут меняться сразу во всех строках
+# Вот так правильно, или через создание в цикле
+hist = [[0] * L2 for i in range(L1)]
+
+A = [None] * 3
+for i in range(3):
+    A[i] = [None] * 2
+
+w, h = 2, 3
+A = [[None] * w for i in range(h)]
